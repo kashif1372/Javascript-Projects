@@ -1,0 +1,111 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+:root{
+
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+--Dark-gray: hsl(0, 0%, 59%);
+
+}
+
+
+main{  
+    background-color: var(--Dark-cyan);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: right 50vw bottom 40vh,left 50vw top 50vh;
+}
+.heading{
+    font-size: 30px;
+}
+.container{
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 450px;
+    width: 700px;
+    position: relative;
+}
+
+.qoutes-icon{
+    position: absolute;
+    padding: 20px 30px;
+    top: 0px;
+    left: 0px;
+}
+.qoutes-icon img{
+    opacity: 0.4;
+    height: 6rem;
+    width: 6rem;
+}
+
+.text{
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: hsl(229, 23%, 23%);
+}
+.authorname{
+    display: flex;
+    margin-bottom: 30px;
+}
+.authorname{
+    color: hsl(227, 10%, 46%);
+}
+
+.authorname img{
+    height: 20px;
+    width: 20px;
+    align-self: center;
+    margin-right: 10px;
+}
+
+.next-btn{
+    position: absolute;
+    bottom: 60px;
+}
+
+.next-btn img{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    align-self: center;
+    bottom: 8px;
+    right: 10px;
+}
+.next-btn button{
+    font-size: 20px;
+    padding: 7px 50px 7px 30px;
+    border-radius: 25px;
+    border: 1px solid hsl(185, 78%, 35%);
+    background-color: hsla(185, 75%, 39%, 0.562);
+}
+
+.madeby{
+    font-size: 20px;
+}
+
+@media(max-width:475px){
+    .container{       
+        width: 300px;
+    }
+    .qoutes-icon img{
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
